@@ -1,5 +1,5 @@
 
--- overwrite my model with view when dbt_project.yml is saying table using config()
+-- overwrite my model with view when dbt_project.yml is saying table using config
 with customers as (
 
   select * from {{ ref('stg_jaffle_shop__customers')}}
